@@ -8,7 +8,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.10.227
+IP-адрес 10.129.0.19
 
 Frontend https://irinawork.students.nomoredomains.monster/
 

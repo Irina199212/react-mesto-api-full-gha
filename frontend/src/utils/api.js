@@ -125,11 +125,11 @@ export default class Api {
 }
 
 export const api = new Api({
-  cardsUrl: 'http://api.irinawork.students.nomoredomains.monster/cards',
-  userInfoUrl: 'http://api.irinawork.students.nomoredomains.monster/users/me',
+  cardsUrl: 'https://api.irinawork.students.nomoredomains.monster/cards',
+  userInfoUrl: 'https://api.irinawork.students.nomoredomains.monster/users/me',
   userInfoUpdateUrl:
-    'http://api.irinawork.students.nomoredomains.monster/users/me',
-  baseAuthUrl: 'http://api.irinawork.students.nomoredomains.monster',
+    'https://api.irinawork.students.nomoredomains.monster/users/me',
+  baseAuthUrl: 'https://api.irinawork.students.nomoredomains.monster',
   headers: {
     'Content-Type': 'application/json',
   },
