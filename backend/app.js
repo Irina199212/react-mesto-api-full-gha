@@ -9,13 +9,14 @@ const { PORT, DB } = require('./config');
 const { createUser, login } = require('./controllers/users');
 const auth = require('./middlewares/auth');
 const errorsContainer = require('./middlewares/errors');
+const { requestLogger, errorLogger } = require('./middlewares/logger');
 
 const patternurl = require('./helpers/helper');
 
 const app = express();
 
 app.use(cors())
-
+app.use(requestLogger);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 mongoose.set('strictQuery', false);
@@ -23,6 +24,13 @@ app.use(express.static(path.join(__dirname, 'public')));
 mongoose.connect(DB, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+});
+
+
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
 });
 
 app.post(
@@ -56,6 +64,7 @@ app.use('/cards', require('./routes/cards'));
 app.use((req, res, next) => {
   next(new NotFoundError('Маршрут не найден'));
 });
+app.use(errorLogger);
 
 app.use(errors());
 app.use(errorsContainer);
