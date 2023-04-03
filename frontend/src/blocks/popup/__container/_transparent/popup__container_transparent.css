@@ -1,0 +1,16 @@
+.popup__container_transparent {
+    background: transparent;
+    border-radius: 0;
+    padding: 34px 36px 37px;
+    max-width: 358px;
+    width: 358px;
+    z-index: 2;
+    position: relative;
+  }
+  @media screen and (max-width: 918px) {
+    .popup__container_transparent {
+      padding: 25px 22px 25px;
+      width: 238px;
+    }
+  }
+  

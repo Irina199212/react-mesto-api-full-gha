@@ -1,0 +1,8 @@
+.main {
+  margin: 40px 0 0;
+}
+@media screen and (max-width: 918px) {
+  .main {
+    margin: 41px 19px 0;
+  }
+}

@@ -1,0 +1,16 @@
+.form__button_white {
+    background: #fff;
+    border: none;
+    margin-top: 216px;
+    color: #000;
+}
+
+.form__button_white:hover {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.form__button_white:disabled {
+    opacity: 0.2;
+    color: #000;
+    background: transparent;
+}

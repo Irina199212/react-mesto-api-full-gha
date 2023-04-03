@@ -1,0 +1,4 @@
+.element__button_active {
+    background: transparent url('../../../../images/button_active.svg') no-repeat
+      center center;
+}

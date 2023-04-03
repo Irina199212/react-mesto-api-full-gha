@@ -1,0 +1,8 @@
+.element__body {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  gap: 21px;
+  justify-content: space-between;
+  margin: 25px 21px 25px;
+  align-items: center;
+}

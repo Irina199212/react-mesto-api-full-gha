@@ -1,0 +1,32 @@
+.form__button {
+  background: #000;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  padding: 14px 0 14px;
+  margin-top: 15px;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+.form__button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.form__button:disabled {
+  border: 1px solid #000000;
+  opacity: 0.2;
+  color: #000;
+  background: transparent;
+}
+
+@media screen and (max-width: 918px) {
+  .form__button {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
