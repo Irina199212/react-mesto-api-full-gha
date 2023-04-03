@@ -3,6 +3,7 @@ const express = require('express');
 const { celebrate, Joi, errors } = require('celebrate');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const cors = require('cors')
 const NotFoundError = require('./errors/notfound');
 const { PORT, DB } = require('./config');
 const { createUser, login } = require('./controllers/users');
@@ -12,6 +13,9 @@ const errorsContainer = require('./middlewares/errors');
 const patternurl = require('./helpers/helper');
 
 const app = express();
+
+app.use(cors())
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 mongoose.set('strictQuery', false);
