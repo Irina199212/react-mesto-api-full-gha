@@ -9,6 +9,9 @@
 Адрес репозитория: https://github.com/Irina199212/react-mesto-api-full-gha
 
 ## Ссылки на проект
-IP-адрес: 158.160.10.227
-Frontend: https://irinawork.students.nomoredomains.monster/
-Backend: https://api.irinawork.students.nomoredomains.monster/
+
+IP-адрес 158.160.10.227
+
+Frontend https://irinawork.students.nomoredomains.monster/
+
+Backend https://api.irinawork.students.nomoredomains.monster/
